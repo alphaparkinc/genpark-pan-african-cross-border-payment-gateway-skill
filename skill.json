@@ -1,0 +1,47 @@
+{
+  "name": "genpark-pan-african-cross-border-payment-gateway-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Pan-African and global cross-border payment gateway processing multi-currency payouts, mobile money rails, and real-time AML compliance.",
+  "author": "genpark",
+  "category": "fintech",
+  "tags": [
+    "cross-border-payments",
+    "fintech-africa",
+    "mobile-money",
+    "fx-settlement",
+    "flutterwave"
+  ],
+  "inputs": {
+    "amount": {
+      "type": "number"
+    },
+    "from_currency": {
+      "type": "string"
+    },
+    "to_country": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "transaction_id": {
+      "type": "string"
+    },
+    "payout_amount": {
+      "type": "number"
+    },
+    "payout_currency": {
+      "type": "string"
+    },
+    "settlement_rail": {
+      "type": "string"
+    },
+    "compliance_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
